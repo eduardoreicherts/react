@@ -10,6 +10,6 @@ let Inicial = () => {
         </div>
     );
     
-}
+};
 
 export default Inicial;
