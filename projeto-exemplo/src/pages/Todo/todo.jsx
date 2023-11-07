@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import List from "../list/list";
-import Form from "../form/form";
+import List from "../../componentes/list/list";
+import Form from "../../componentes/form/form";
 import "./todo.css"
 
 const Todo = () => {
@@ -28,7 +28,7 @@ const Todo = () => {
 
   return (
     <div className="todo-wrapper">
-      <h1>ToDo List</h1>
+      <h1>Lista de Tarefas</h1>
       <Form
       handleAddItemToList={handleAddItemToList}
       handleChangeInput={handleChangeInput}

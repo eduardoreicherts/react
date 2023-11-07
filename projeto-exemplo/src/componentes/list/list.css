@@ -6,11 +6,11 @@
 .todo-list {
     width: 18.3vw;
     list-style: none;
-    border: 1px solid black;
     margin-top: 2%;
 }
 
 li {
     text-align: center;
-    border: 1px solid black;
+    border: 2px solid black;
+    padding: 1px;
 }
