@@ -1,0 +1,10 @@
+body {
+    background-color: rgb(182, 182, 182);
+}
+
+.todo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

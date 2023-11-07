@@ -1,0 +1,40 @@
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 18.3vw;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background-color: rgb(182, 182, 182);
+}
+
+input:hover {
+    border-bottom: 2px solid black;
+}
+
+input:focus {
+    border-bottom: 2px solid black;
+}
+
+button {
+    width: 12vw;
+    color: rgb(255, 255, 255);
+    background-color: rgb(75, 122, 253);
+    padding: 7px;
+    margin: 7px;
+    border: 2px solid rgb(194, 194, 194);
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(0, 17, 255);
+}

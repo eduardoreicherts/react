@@ -1,0 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.todo-list {
+    width: 18.3vw;
+    list-style: none;
+    border: 1px solid black;
+    margin-top: 2%;
+}
+
+li {
+    text-align: center;
+    border: 1px solid black;
+}

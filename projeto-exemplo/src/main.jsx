@@ -1,9 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Inicial from './pages/componentes/index.jsx'
+import Todo from './pages/componentes/Todo/todo'
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Inicial/>
+    <Todo/>
   </React.StrictMode>,
 )
