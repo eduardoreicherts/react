@@ -17,6 +17,10 @@ const Weather = () => {
     setCity("");
   };
 
+  const refresh = () => {
+    setWeatherData(null);
+  };
+
   return (
     <>
       {!weatherData && (
@@ -27,7 +31,7 @@ const Weather = () => {
               placeholder="Digite a cidade..."
               onChange={(e) => setCity(e.target.value)}
             />
-            <button type="submit">Buscar</button>
+            <button className="submitBtn" type="submit">Buscar</button>
           </form>
         </div>
       )}
@@ -39,11 +43,17 @@ const Weather = () => {
             src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`}
             width="50"
           />
-          <p>Temperatura atual: {weatherData.main.temp}º</p>
-          <p>Clima: {weatherData.weather[0].description}</p>
-          <p>Sensação térmica: {weatherData.main.feels_like}</p>
-          <p>Temperatura mínima: {weatherData.main.temp_min}</p>
-          <p>Temperatura máxima{weatherData.main.temp_max}</p>
+          <p>Temperatura atual</p>
+          <p>{weatherData.main.temp}°</p>
+          <p>Clima</p>
+          <p>{weatherData.weather[0].description}</p>
+          <p>Sensação térmica</p>
+          <p>{weatherData.main.feels_like}</p>
+          <p>Temperatura mínima</p>
+          <p>{weatherData.main.temp_min}°</p>
+          <p>Temperatura máxima</p>
+          <p>{weatherData.main.temp_max}°</p>
+          <button className="refresh" onClick={refresh}>Voltar</button>
         </div>
       )}
     </>
